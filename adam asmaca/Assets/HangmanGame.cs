@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class HangmanGame : MonoBehaviour
 {
-    // UI Elemanları
+    
     public TextMeshProUGUI hiddenWordText;
     public TextMeshProUGUI gameStateText;
     public TextMeshProUGUI remainingLivesText;
@@ -13,13 +13,13 @@ public class HangmanGame : MonoBehaviour
     public TMP_InputField guessInput;
     public Button checkButton;
 
-    // Oyun Değişkenleri
+    
     private string hiddenWord = "kelebek";
     private string guessedLetters = "";
     private int remainingLives = 6;
     private bool isGameOver = false;
 
-    // Adam asmaca resimleri (baş, gövde, vb.)
+   
     public Sprite[] hangmanStages;
 
     void Start()
@@ -29,7 +29,7 @@ public class HangmanGame : MonoBehaviour
         gameStateText.text = "";
     }
     
-    // Gizli kelimeyi gösteren alt çizgileri güncelleme
+    
     private void UpdateHiddenWordDisplay()
     {
         string displayWord = "";
